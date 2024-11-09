@@ -79,7 +79,52 @@ So using we can variable const if know its value before compilation and don't wa
 
 - if you make class final then it would not be available for any further extension.
 
+## Static
 
+- Static keyword is use with variable and method
+- It is used for memory management
+- variable and method belongs  class instead of instance.
+- Dart does not have feature of static bloc and static nested class like java.
+- You can use static variable only in static method bloc.
+
+```dart
+class Student {
+  Student({required this.name});
+
+  String name;
+  static String collegeName = '';
+
+  static void changeCollegeName() {
+    collegeName = 'IIT-Delhi';
+  }
+}
+```
+
+## Private Named and const Constructor
+
+- This is used make singleton object in dart.
+- Since dart is not having any object keyword for singleton object creation it creates singleton object through making constructor private.
+- After making constructor private it will not be allowed to create its instance out side of the class.
+- if you add name after underscore it will become Named private constructor.
+
+Example:
+
+```dart
+class Singleton {
+  static Singleton? _instance; // Private instance variable
+
+  // Private constructor
+  Singleton._();
+
+  // Factory constructor to provide access to the singleton instance
+  factory Singleton.getInstance() {
+    if (_instance == null) {
+      _instance = Singleton._(); // Creating an instance using the private constructor
+    }
+    return _instance!;
+  }
+}
+```
 
 ## 🚀 About Me
 I am mobile application developer with experience of android and flutter.
