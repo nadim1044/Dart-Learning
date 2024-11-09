@@ -49,6 +49,9 @@ class Boy extends Person {
 ```
 
 
+## Sealed class
+
+A sealed class acts like a 'locked' or restricted class hierarchy, where all subclasses must be defined in the same file. This restriction creates a controlled set of subclasses, effectively 'locking' the class against any further extension outside of the defined scope.
 
 
 
