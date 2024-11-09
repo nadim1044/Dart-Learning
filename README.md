@@ -65,13 +65,13 @@ sealed class also enables a pattern matching in dart for switch cases.
 ### final with variables
 It is going throw exception on reinitialization.
 
-It is used when you want to evaluated at run-time.
+It is used when you want to evaluated of your variable at run-time.
 
 Example : `DateTime.now();`
 
 ### const with variables
 
-It is used when you want to evaluated at compile-time.
+It is used when you want to evaluated of your variable at compile-time.
 
 So using we can variable const if know its value before compilation and don't want to reinitialize it.
 
