@@ -55,7 +55,29 @@ A sealed class acts like a 'locked' or restricted class hierarchy, where all sub
 
 As Example: Think you have class called result in which you just want to have finit set of outcomes that can be Success and Failed.
 
+sealed class also enables a pattern matching in dart for switch cases.
+
 - [Reference](https://medium.com/@ssindher11/exploring-sealed-classes-in-flutter-241d3e160132)
+
+
+## Final and const keyword
+
+### final with variables
+It is going throw exception on reinitialization.
+
+It is used when you want to evaluated at run-time.
+
+Example : `DateTime.now();`
+
+### const with variables
+
+It is used when you want to evaluated at compile-time.
+
+So using we can variable const if know its value before compilation and don't want to reinitialize it.
+
+### final with class
+
+- if you make class final then it would not be available for any further extension.
 
 
 
