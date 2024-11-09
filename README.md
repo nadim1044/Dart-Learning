@@ -53,6 +53,9 @@ class Boy extends Person {
 
 A sealed class acts like a 'locked' or restricted class hierarchy, where all subclasses must be defined in the same file. This restriction creates a controlled set of subclasses, effectively 'locking' the class against any further extension outside of the defined scope.
 
+As Example: Think you have class called result in which you just want to have finit set of outcomes that can be Success and Failed.
+
+- [Reference](https://medium.com/@ssindher11/exploring-sealed-classes-in-flutter-241d3e160132)
 
 
 
