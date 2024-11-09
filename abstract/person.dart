@@ -1,7 +1,10 @@
 abstract class Person {
+
   Person({required this.name});
   String name;
-  void gender();
+
+  void personIntro();
+
   void displayInfo() {
     print('Name : $name');
   }

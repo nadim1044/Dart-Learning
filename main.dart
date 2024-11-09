@@ -3,7 +3,7 @@ import 'abstract/person.dart';
 
 main() {
   Person boy = Boy(name: 'Nadim');
-  boy.gender();
+  boy.personIntro();
 }
 
 
