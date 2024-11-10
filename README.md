@@ -171,8 +171,8 @@ print('positionalParamsWithOptional : $name : $title');
 ## Enums
 
 - Enums are uses for named constant value in dart.
-- Enums provides constant and you can add your desire object with it.
-- As example you can create country code enums and provide actual name of country with it.
+- Enums provides constant, and you can add your desire object with it.
+- As example, you can create country code enums and provide actual name of country with it.
 
 ```dart
 enum Country {
