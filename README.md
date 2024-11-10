@@ -187,6 +187,127 @@ enum Country {
 }
 ```
 
+## Object-Oriented Programming Concepts
+
+#### Object
+
+- Object is real world entity which have behaviour and state. Or we can it is blueprint of class.
+- An object can be defined as instance of class.
+
+#### Class
+
+- Class is blueprint from which we create objects. It have methods and variables.
+
+#### Abstraction
+
+- Abstraction is the process of hiding internal details and showing required functionality.
+- Abstraction achieve through abstract class and interface.
+- Example: interface or abstract class we just add functionality and whenever we implement it that time we write its
+  internal.
+
+```dart
+abstract class Car {
+  void accelerator();
+
+  void speedBreak();
+
+  void displaySpeed(int speed) {
+    print('Speed : $speed');
+  }
+}
+
+class BMW extends Car {
+  int speed = 0;
+
+  @override
+  void accelerator() {
+    speed++;
+  }
+
+  @override
+  void speedBreak() {
+    speed--;
+  }
+}
+```
+
+#### Encapsulation
+
+- Encapsulation is the concept of Binding data and code into single unit.
+- dart class is itself an example of encapsulation.
+- access modifiers are used to provide a limitation on access of variable and methods.
+
+#### Polymorphism
+
+- Polymorphism provide the ability to access one class for many task.
+- class Shape can be used for Triangle, Circle and Square.
+- Two types of polymorphism
+
+1. Compile Time (Dart does not support.)
+2. Runtime
+
+- In compile-time you can provide same name but different parameter to method.
+- Runtime polymorphism done through method overriding.
+
+#### Inheritance
+
+- Inheritance is the concept where acquire the all properties of parent class.
+- The class which acquire is known as subclass and the class from it gets is called super class.
+- Inheritance build the IS-A relation between the class. Student IS A kind of Person.
+- Single inheritance :
+
+```dart
+class A {}
+
+class B extends A {}
+```
+
+- Multi-level inheritance
+
+```dart
+class A {}
+
+class B extends A {}
+
+class C extends B {}
+```
+
+- Multiple Inheritance [Dart does not support] Clas tries to extend two classes.
+- Hierarchical Inheritance [One class get extended in two or more class]
+
+```dart
+
+class A {}
+
+class HierarchicalInheritance1 extends A {}
+
+class HierarchicalInheritance2 extends A {}
+```
+
+#### Coupling
+
+- Coupling shows the dependencies among the class.
+- if the class depends on other class in many ways then High coupling
+- if the class do not depend too much on other class then it called low coupling.
+- If the code will be low coupled then it will be easy to remove or refactor.
+
+#### Cohesion
+
+- Cohesion defines how effectively elements within module work together to achieve single purpose.
+
+IT is Best practice to write a program which have Low coupling and High cohesion.
+
+#### Association
+
+- Association also describe the relationship among the class.
+- It shows HAS-A relation with classes.
+- Categories into `Aggregation` and `Composition`.
+- `Aggregation` is form on association in which two class can survive individually.
+- `Composition` is form of association where can not survive together if anyone of them get removed.
+- Relationship of player with Team can represent as aggregation as deletion of player does not affect the Team as there
+  are other players exist.
+- Relationship of Car with engine represent composition association as after removing engine car would not survive.
+
 ## 🚀 About Me
 
 I am mobile application developer with experience of android and flutter.
