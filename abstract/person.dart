@@ -1,8 +1,8 @@
-import '../sealed/state_machine.dart';
+import 'boy.dart';
 
 abstract class Person {
-
   Person({required this.name});
+
   String name;
 
   void personIntro();
@@ -12,7 +12,8 @@ abstract class Person {
   }
 }
 
-
-// Person boy = Boy(name: 'Nadim');
-// boy.personIntro();
+void main() {
+  Person boy = Boy(name: 'Nadim');
+  boy.personIntro();
+}
 // O/p: My name is $name. I am a engineer
