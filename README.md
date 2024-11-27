@@ -4,7 +4,7 @@ This repo is going to talk about the basic of dart language
 
 ## Abstract class
 
-Abstract class is used in Object orineted programmig language for abstraction and encapsulation.
+Abstract class is uses in Object orineted programmig language for abstraction and encapsulation.
 
 Points:
 
