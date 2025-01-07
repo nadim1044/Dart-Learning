@@ -9,3 +9,9 @@ class Student {
   }
 }
 
+void main() {
+  Student student = Student(name: 'Nadim');
+  print('${student.name} ${Student.collegeName}###');
+  Student.changeCollegeName();
+  print('${student.name} ${Student.collegeName}');
+}
