@@ -256,6 +256,11 @@ enum Country {
 }
 ```
 
+## Future
+
+Future is one time contract where you give task, and it will give you back once it will get available.
+Future does work on your main thread so always opt for Isolate if you are running heavy task.
+
 ---
 
 ## 🚀 About Me
