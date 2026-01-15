@@ -1,4 +1,5 @@
 Future<int> getNumber() {
+  print('getNumber');
   return Future.value(42);
 }
 
@@ -14,6 +15,14 @@ Future<void> fail() {
 }
 
 void main() async {
+  /// Wait will start each future together and return result of each in Array.
+  /// If any of them will fail then it will not execute others.
+  final waitFuture = await Future.wait([fetchData(), getNumber()]);
+  print('Waited $waitFuture');
+
+  /// Any will return the first future which ever will get completed.
+  final anyFuture = await Future.any([fetchData(), getNumber()]);
+  print('Any $anyFuture');
   try {
     final result = await fetchData();
     print(result);
