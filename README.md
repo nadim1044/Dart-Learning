@@ -261,6 +261,16 @@ enum Country {
 Future is one time contract where you give task, and it will give you back once it will get available.
 Future does work on your main thread so always opt for Isolate if you are running heavy task.
 
+## Isolate
+
+An independent execution unit that does not share memory with the main thread (the UI isolate)
+There are manin two patterns of Isolate using.
+
+1. Short Lived Isolate: These are spawned to perform a single, heavy task (like parsing a large JSON) and then
+   immediately terminate.
+2. Long Lived Isolate: These remain alive throughout the application's lifecycle to handle multiple tasks or ongoing
+   processes.
+
 ---
 
 ## 🚀 About Me
