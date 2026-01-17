@@ -271,6 +271,16 @@ There are manin two patterns of Isolate using.
 2. Long Lived Isolate: These remain alive throughout the application's lifecycle to handle multiple tasks or ongoing
    processes.
 
+## Stream
+
+Stream is a sequence of asynchronous events that provides zero or more values or errors over time.
+Just like future give result once stream will listen and do streaming until it get the data.
+
+There are two type of it.
+
+1. Single Subscription Streams
+2. Broadcast Streams
+
 ---
 
 ## 🚀 About Me
